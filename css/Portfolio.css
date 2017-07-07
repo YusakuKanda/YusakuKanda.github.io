@@ -12,13 +12,28 @@ h1{
   color: #585858;
 }
 
-h3{
+h2{
   color: #6E6E6E;
   margin-bottom: 7%;
 }
 
-p{
+
+.modal-content {
+  margin-left: 200px;
+  margin-top: 100px;
   color: #6E6E6E;
+  margin-right: 0px;
+}
+
+p{
+  margin-top: 20px;
+  font-size: 13px;
+  width: auto;
+}
+
+.picture{
+
+  float: right;
 }
 
 .menu{
@@ -34,6 +49,20 @@ p{
   color: #6E6E6E;
   font-size: 13px;
 }
+
+.area{
+  float: left;
+  text-align: center;
+  color: #6E6E6E;
+  padding: 0.5em 1em;
+  margin-top: 100px;
+  width: 70px;
+  height: 70px;
+  font-weight: bold;
+  border: solid 1px #6E6E6E;
+  clear: both;
+}
+
 
 a{
   text-decoration: none;
@@ -87,6 +116,7 @@ a{
   width: 190px;
   height: 390px;
 }
+
 
 @media screen and (max-width: 768px){
 
@@ -166,16 +196,4 @@ a{
     height: 190px;
   }
 
-}
-
-
-.modal-content {
- width: 50% ;
- margin: 0 ;
- padding: 10px 20px ;
- border: 2px solid #aaa ;
- background: #fff ;
- position: fixed ;
- display: none ;
- z-index: 2 ;
 }
