@@ -68,7 +68,9 @@
 
         modal.click(function(event) {
             event.preventDefault();
+            var scrollBarWidth = window.innerWidth - document.body.clientWidth;
             $('body, html').css({'overflow':'hidden'});
+            $('body').css({'padding-right': scrollBarWidth});
             if (href == idConc) {
                 if (id.hasClass(settings.modalTarget+'-off')) {
                     id.removeClass(settings.animatedOut);
@@ -76,7 +78,7 @@
                     id.addClass(settings.modalTarget+'-on');
                 }
                  if (id.hasClass(settings.modalTarget+'-on')) {
-                    settings.beforeOpen();
+                    settings.beforeOpen($(this));
                     id.css({'opacity':settings.opacityIn,'z-index':settings.zIndexIn});
                     id.addClass(settings.animatedIn);
                     id.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', afterOpen);
@@ -85,10 +87,10 @@
         });
 
 
-
         closeBt.click(function(event) {
             event.preventDefault();
             $('body, html').css({'overflow':'auto'});
+            $('body').css({'padding-right': 0});
 
             settings.beforeClose(); //beforeClose
             if (id.hasClass(settings.modalTarget+'-on')) {

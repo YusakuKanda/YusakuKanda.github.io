@@ -4,6 +4,7 @@
   font-family: "Rounded Mplus 1c";
 }
 
+
 h1{
   font-size: 15px;
   margin-top: 70px;
@@ -14,25 +15,34 @@ h1{
 
 h2{
   color: #6E6E6E;
-  margin-bottom: 7%;
+  margin-bottom: 3px;
+  clear: both;
+}
+
+h3{
+  margin-left: 0px;
+  margin-bottom: 30px;
 }
 
 
+
 .modal-content {
-  margin-left: 200px;
+  margin-left: 300px;
   margin-top: 100px;
   color: #6E6E6E;
   margin-right: 0px;
 }
 
 p{
-  margin-top: 20px;
+  float: left;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
   font-size: 13px;
-  width: auto;
 }
 
 .picture{
-
+  margin-top: 0px;
   float: right;
 }
 
@@ -50,7 +60,15 @@ p{
   font-size: 13px;
 }
 
+.list:hover{
+  color: #ffffff;
+  background-color:#ddd;
+  /*position:relative;
+  left:15px;*/
+}
+
 .area{
+  display: flex;
   float: left;
   text-align: center;
   color: #6E6E6E;
@@ -63,6 +81,9 @@ p{
   clear: both;
 }
 
+.area:hover{
+  background-color:#ddd;
+}
 
 a{
   text-decoration: none;
@@ -196,4 +217,8 @@ a{
     height: 190px;
   }
 
+}
+
+.hidden-concept {
+  display: none;
 }
