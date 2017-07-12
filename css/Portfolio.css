@@ -6,7 +6,7 @@
 
 
 h1{
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 70px;
   margin-left: 30px;
   margin-bottom: 25px;
@@ -23,8 +23,6 @@ h3{
   margin-left: 0px;
   margin-bottom: 30px;
 }
-
-
 
 .modal-content {
   margin-left: 300px;
@@ -57,7 +55,7 @@ p{
   list-style:none;
   margin-bottom: 13px;
   color: #6E6E6E;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .select {
@@ -69,8 +67,6 @@ p{
 .list:hover{
   color: #ffffff;
   background-color:#ddd;
-  /*position:relative;
-  left:15px;*/
 }
 
 .area{
@@ -105,7 +101,7 @@ a{
 
 .container{
   float: right;
-  width: 72%;
+  width: 1007px;
   margin: 0;
   overflow: hidden;
 }
@@ -155,29 +151,26 @@ a{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
   .menu{
-    display: inline-block;
-    width: 100%;
+    width: 80px;
     margin-bottom: 30px;
+    font-size: 13px;
   }
 
-  .list {
-    float: left;
-    width: 100px;
-    font-size: 13px;
+  .container{
+    width: 620px;
+  }
 
+  .grid-item--main2{
+    width: 291px;
+    height: 291px;
   }
 
   .grid-item--sub {
     width: 140px;
     height: 140px;
-  }
-
-  .grid-item--main {
-    width: 290px;
-    height: 290px;
   }
 
   .grid-item--width {
@@ -189,10 +182,15 @@ a{
     width: 290px;
     height: 140px;
   }
+
+  .grid-item--main {
+    width: 290px;
+    height: 290px;
+  }
 }
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 667px){
   h4{
     margin-bottom: 10px;
   }
@@ -213,25 +211,26 @@ a{
     font-size: 13px;
   }
 
+  .container{
+    width: 318px;
+  }
+
+
   .grid-item--sub {
     width: 90px;
     height: 90px;
   }
 
   .grid-item--main {
-    width: 190px;
-    height: 190px;
+    width: 192px;
+    height: 192px;
   }
+
 
   .grid-item--width {
       width: 190px;
       height: 90px;
     }
-
-  .grid-item--height {
-    width: 90px;
-    height: 190px;
-  }
 
 }
 
