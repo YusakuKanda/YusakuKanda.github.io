@@ -15,33 +15,33 @@ h1{
 
 h2{
   color: #6E6E6E;
-  margin-bottom: 3px;
+  margin-bottom: 0.8rem;
   clear: both;
 }
 
 h3{
   margin-left: 0px;
-  margin-bottom: 30px;
-}
-
-.modal-content {
-  margin-left: 300px;
-  margin-top: 100px;
-  color: #6E6E6E;
-  margin-right: 0px;
+  margin-bottom: 10px;
 }
 
 p{
+    font-size: 13px;
+}
+
+
+.modal-content {
   float: left;
+  margin-left: 150px;
+  margin-top: 100px;
+  color: #6E6E6E;
   margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  font-size: 13px;
+  clear: right;
 }
 
 .picture{
-  margin-top: 0px;
   float: right;
+  margin-top: 140px;
+  clear: right;
 }
 
 .menu{
@@ -58,29 +58,42 @@ p{
   font-size: 13px;
 }
 
+
 .select {
   display: inline-block;
   margin:10px;
 }
 
 
-.list:hover{
-  color: #ffffff;
-  background-color:#ddd;
+.contents ul{
+  margin-top: 2rem;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
+
+.list:hover {
+  background-color:#ddd;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
 
 a:hover img{
-    cursor:pointer;
-    filter: alpha(opacity=60);        /* ie lt 8 */
-    -ms-filter: "alpha(opacity=60)";  /* ie 8 */
-    -moz-opacity:0.6;                 /* FF lt 1.5, Netscape */
-    -khtml-opacity: 0.6;              /* Safari 1.x */
-    opacity:0.6;
-    zoom:1;
+    cursor:default;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)";
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.area{
+.area {
   display: flex;
   float: left;
   text-align: center;
@@ -94,20 +107,34 @@ a:hover img{
   clear: both;
 }
 
-.area:hover{
-  background-color:#ddd;
+div .contents{
+  width:auto;
+  height: auto;
+  margin-left: 0px;
+}
+
+.contents ul{
+  padding-left: 0;
+  width:auto;
+  height: auto;
+  margin-left: 0px;
+}
+
+.contents li{
+    margin-left: 0px;
 }
 
 a{
+  cursor:default;
   text-decoration: none;
   color : #6E6E6E;
 }
 
 .massege{
-  width: 25rem;
-  height: 25rem;
-  font-size: 12px;
-  margin: auto;
+  width: 400px;
+  height: 500px;
+  font-size: 13px;
+  margin-top: 0px;
 }
 
 .container{
