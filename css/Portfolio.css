@@ -1,9 +1,16 @@
-
-*{
-  margin :auto;
-  font-family: "Noto Sans Japanese";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Noto Sans Japanese", sans-serif;
+}
 
 h1{
   font-size: 16px;
@@ -29,17 +36,28 @@ h3{
   color: #424242;
   font-weight:lighter;
   margin-left: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   letter-spacing: 1px;
   cursor: default;
 }
 
+.comment{
+  width: 300px;
+  height: 400px;
+}
+
+.concept{
+  width: 400px;
+  height: 250px;
+}
+
 p{
-    font-size: 13px;
+    font-size: 12px;
     color: #6E6E6E;
     font-weight:lighter;
     letter-spacing: 0.8px;
     cursor: default;
+
 }
 
 .modal-content {
@@ -47,7 +65,10 @@ p{
   color: #6E6E6E;
   margin-right: 0px;
   margin-left: 100px;
-  clear: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
 }
 
 .picture{
@@ -61,7 +82,7 @@ p{
   height: auto;
   clear: both;
   margin-top: 0px;
-  margin-right: 100px;
+  margin-left: 40px;
 }
 
 
@@ -84,7 +105,7 @@ p{
 }
 .list:hover {
   color: #fff;
-  transform: translate(10px,0px);
+  transform: translate(15px,0px);
 }
 
 .select {
@@ -104,10 +125,9 @@ a:hover img{
     transition: 0.2s ease-in-out;
 }
 
-#animatedModal_01{
-  padding-top:100px;
+#animatedModal_01 {
+  padding: 100px 0;
 }
-
 
 .area{
   letter-spacing: 3px;
@@ -129,12 +149,17 @@ a:hover img{
   font-size: 13px;
   cursor: pointer;
 }
+
+.fa{
+  font-size: 19px;
+}
+
  .area:hover{
-  transform: translate(10px,0px);
+  transform: translate(15px,0px);
 }
 
 
-div .contents{
+.contents{
   width:auto;
   height: auto;
   margin-left: 0px;
@@ -144,7 +169,6 @@ div .contents{
   padding-left: 0;
   width:auto;
   height: auto;
-  margin-top: 2rem;
   margin-left: 0px;
   margin-bottom: 0px;
 
@@ -159,7 +183,6 @@ a{
   color : #6E6E6E;
 }
 
-
 .massege{
   float: none;
   width: 400px;
@@ -167,6 +190,7 @@ a{
   font-size: 13px;
   margin-top: 0px;
   clear: inherit;
+  margin-left: 30%;
 }
 
 .container{
@@ -177,7 +201,7 @@ a{
 }
 
 .grid{
-  margin-bottom: 12.5rem;
+  margin-bottom: 25%;
 }
 
 .grid-item {
@@ -190,29 +214,33 @@ a{
   margin-bottom: 5px;
 }
 
+.grid-item img {
+   width: 100%;
+ }
+
 .grid-item--sub {
   width: 190px;
   height: 190px;
 }
 
 .grid-item--main{
-  width: 592px;
-  height: 392px;
+  width: 590px;
+  height: 390px;
 }
 
 .grid-item--main2{
-  width: 391px;
-  height: 391px;
+  width: 390px;
+  height: 390px;
 }
 
 .grid-item--width {
-    width: 592px;
+    width: 590px;
     height: 190px;
   }
 
 .grid-item--height {
   width: 190px;
-  height: 391px;
+  height: 390px;
 }
 
 .grid-item--mini {
@@ -221,13 +249,13 @@ a{
 }
 
 .picture img{
-  width: 100%;
+  width: 500px;
   height: auto;
 }
 
 .select img{
   width:80px;
-   height:auto;
+  height:auto;
 }
 
 .hidden-concept {
@@ -235,12 +263,27 @@ a{
 }
 
 @media screen and (max-width: 1020px){
+  .list:hover {
+    color: #fff;
+    transform: translate(0px,-10px);
+  }
+
+  .area:hover{
+   transform: translate(10px,0px);
+ }
+
 
   .area{
     letter-spacing: 3px;
       width: auto;
       margin-left: 10px;
+      font-size: 10px
   }
+
+  .fa{
+    font-size: 14px;
+  }
+
 
   .picture img{
     width: 400px;
@@ -263,9 +306,14 @@ a{
     width: 620px;
   }
 
+  .concept{
+    width: 280px;
+    height: 400px;
+  }
+
   .grid-item--main2{
-    width: 292px;
-    height: 92px;
+    width: 290px;
+    height: 290px;
   }
 
   .grid-item--sub {
@@ -274,7 +322,7 @@ a{
   }
 
   .grid-item--width {
-      width: 290px;
+      width: 440px;
       height: 140px;
     }
 
@@ -284,19 +332,32 @@ a{
   }
 
   .grid-item--main {
-    width: 291px;
-    height: 291px;
+    width: 440px;
+    height: 290px;
   }
 }
 
 
 @media screen and (max-width: 667px){
+
+  .concept{
+    width: 280px;
+    height: 400px;
+  }
+
   h3{
     margin-top: 30px;
   }
 
     .container{
       width: 318px;
+    }
+
+    div .picture{
+      float: left;
+      margin-left: 80px;
+      margin-top: 10px;
+      clear: both;
     }
 
   .area{
@@ -311,20 +372,13 @@ a{
     margin-left: 80px;
   }
 
-  div .picture{
-    float: left;
-    margin-left: 156px;
-    margin-top: 5px;
-    clear: both;
-  }
-
   .picture img{
     width: 200px;
     height: auto;
   }
 
+
   .select img{
-    clear: both;
     width:40px;
      height:auto;
   }
@@ -353,13 +407,12 @@ a{
   }
 
   .grid-item--main {
-    width: 191px;
-    height: 191px;
+    width: 290px;
+    height: 190px;
   }
 
-
   .grid-item--width {
-      width: 190px;
+      width: 290px;
       height: 90px;
     }
 
