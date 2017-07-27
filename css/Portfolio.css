@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Noto Sans Japanese", sans-serif;
+  background: #FDFDFD;
+}
+
+h1{
+  font-size: 16px;
+  margin-top: 80px;
+  margin-left: 45px;
+  margin-bottom: 25px;
+  color: #424242;
+  letter-spacing: 1px;
+  font-weight: normal;
+  cursor: default;
+}
+
+h2{
+  color: #424242;
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-weight:lighter;
+  letter-spacing: 1px;
+  cursor: default;
+  width: 200px;
+  margin: 0px;
+}
+
+h3{
+  color: #424242;
+  font-weight:lighter;
+  margin-left: 0px;
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.comment{
+  width: 300px;
+  height: 400px;
+}
+
+.concept{
+  width: 400px;
+  height: 250px;
+}
+
+p{
+    font-size: 12px;
+    color: #6E6E6E;
+    font-weight:lighter;
+    letter-spacing: 0.8px;
+    cursor: default;
+}
+
+.modal-content {
+  float: left;
+  color: #6E6E6E;
+  margin-right: 0px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.menu{
+  float: left;
+  width: auto;
+  height: auto;
+  clear: both;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+
+
+.list {
+  letter-spacing: 0.8px;
+  margin-left: 5px;
+  list-style:none;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: left;
+  line-height: 37px;
+  color:  #6E6E6E;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.list:hover {
+  color: #fff;
+  transform: translate(15px,0px);
+}
+
+a:hover img{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)";
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.area{
+  letter-spacing: 3px;
+  margin-left: 10px;
+  display: flex;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  height:auto;
+  width:auto;
+  text-align: center;
+  color:  #6E6E6E;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  clear: both;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.fa{
+  font-size: 19px;
+}
+
+.area:hover {
+  transform: translate(15px,0px);
+}
+
+.select {
+  display: inline-block;
+  margin:10px;
+  margin-bottom: 50px;
+}
+
+.contents{
+  width:auto;
+  height: auto;
+  margin-left: 0px;
+}
+
+.contents ul {
+  padding-left: 0;
+  width:auto;
+  height: auto;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.contents li {
+  margin-left: 0px;
+}
+
+a{
+  text-decoration: none;
+  color : #6E6E6E;
+}
+
+ .massege{
+  float: none;
+  height: 350px;
+  font-size: 13px;
+  margin-top: 0px;
+  clear: inherit;
+  margin-left: 30%;
+  margin-right: 0px;
+}
+
+.container{
+  float: right;
+  width: 1007px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.grid{
+  margin-bottom: 25%;
+}
+
+.grid-item {
+  border: 0.5px #D8D8D8 solid;
+  background-color: #000000;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.year {
+  border: none;
+  background-color: #000000;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+.massege p{
+  height: 150px;
+  width: 400px;
+  margin-right: 0;
+}
+
+
+.profil img{
+  float: right;
+  width: auto;
+  height: 350px;
+  clear: none;
+}
+
+.grid-item img {
+   width: 100%;
+ }
+
+.grid-item--sub {
+  width: 190px;
+  height: 190px;
+}
+
+.grid-item--main{
+  width: 590px;
+  height: 390px;
+}
+
+.grid-item--main2{
+  width: 390px;
+  height: 390px;
+}
+
+.grid-item--width {
+    width: 590px;
+    height: 190px;
+  }
+
+.grid-item--height {
+  width: 190px;
+  height: 390px;
+}
+
+.animated{
+  padding-top: 100px;
+}
+
+.grid-item--mini {
+  width: 40px;
+  height: 40px;
+}
+
+.picture img{
+  float: right;
+  width: 500px;
+  height: auto;
+  border: 0.5px #D8D8D8 solid;
+}
+
+.select img{
+  width:auto;
+  height:90px;
+  border: 0.5px #D8D8D8 solid;
+}
+
+.hidden-concept {
+  display: none;
+}
+
+
+@media screen and (max-width: 1020px){
+  .list:hover {
+    color: #fff;
+    transform: translate(0px,-10px);
+  }
+
+  .area:hover{
+   transform: translate(10px,0px);
+ }
+
+
+  .area{
+    letter-spacing: 3px;
+      width: auto;
+      margin-left: 10px;
+      font-size: 10px
+  }
+
+  .fa{
+    font-size: 14px;
+  }
+
+  .picture img{
+    width: 400px;
+    height: auto;
+  }
+
+  .menu li{
+  display: inline-block;
+  width: 80px;
+  }
+
+  div .picture{
+    float: left;
+    margin-left: 175px;
+    margin-top: 10px;
+    clear: both;
+  }
+
+  .container{
+    width: 620px;
+  }
+
+  .concept{
+    width: 280px;
+    height: 400px;
+  }
+
+  .grid-item--main2{
+    width: 290px;
+    height: 290px;
+  }
+
+  .grid-item--sub {
+    width: 140px;
+    height: 140px;
+  }
+
+  .grid-item--width {
+      width: 440px;
+      height: 140px;
+    }
+
+  .grid-item--height {
+    width: 290px;
+    height: 140px;
+  }
+
+  .grid-item--main {
+    width: 440px;
+    height: 290px;
+  }
+}
+
+
+@media screen and (max-width: 667px){
+
+  .concept{
+    width: 280px;
+    height: 400px;
+  }
+
+  h3{
+    margin-top: 30px;
+  }
+
+    .container{
+      width: 318px;
+    }
+
+    div .picture{
+      float: left;
+      margin-left: 80px;
+      margin-top: 10px;
+      clear: both;
+    }
+
+  .area{
+      letter-spacing: 3px;
+      width: auto;
+      margin-left: 10px;
+  }
+
+  .modal-content {
+    color: #6E6E6E;
+    margin-right: 0px;
+    margin-left: 80px;
+  }
+
+  .picture img{
+    width: 200px;
+    height: auto;
+  }
+
+
+  .select img{
+    width:auto;
+     height:60px;
+  }
+
+  h4{
+    margin-bottom: 10px;
+  }
+
+  .grid{
+    margin-bottom: 5rem;
+  }
+
+  .menu{
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .menu li{
+  display: inline-block;
+  width: 60px;
+  }
+
+  .grid-item--sub {
+    width: 90px;
+    height: 90px;
+  }
+
+  .grid-item--main {
+    width: 290px;
+    height: 190px;
+  }
+
+  .grid-item--width {
+      width: 290px;
+      height: 90px;
+    }
+
+
+
+
+}
