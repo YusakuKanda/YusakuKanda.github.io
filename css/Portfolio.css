@@ -31,8 +31,6 @@ h2{
   font-weight:lighter;
   letter-spacing: 1px;
   cursor: default;
-  width: 200px;
-  margin: 0px;
 }
 
 h3{
@@ -73,6 +71,13 @@ p{
   min-height: 100%;
 }
 
+.picture img{
+  float: right;
+  width: 500px;
+  height: auto;
+  border: 0.5px #D8D8D8 solid;
+}
+
 .menu{
   float: left;
   width: auto;
@@ -81,7 +86,6 @@ p{
   margin-top: 0px;
   margin-left: 40px;
 }
-
 
 
 .list {
@@ -113,6 +117,10 @@ a:hover img{
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+}
+
+#animatedModal_01 {
+  padding: 100px 0;
 }
 
 .area{
@@ -173,12 +181,13 @@ a{
   color : #6E6E6E;
 }
 
- .massege{
+.massege{
   float: none;
+  width: auto;
   height: 350px;
   font-size: 13px;
-  margin-top: 0px;
   clear: inherit;
+  margin-top: 0px;
   margin-left: 30%;
   margin-right: 0px;
 }
@@ -214,17 +223,17 @@ a{
 }
 
 .massege p{
-  height: 150px;
+  height: auto;
   width: 400px;
   margin-right: 0;
+  margin-bottom: 5%;
 }
 
-
 .profil img{
-  float: right;
+  float:right;
   width: auto;
   height: 350px;
-  clear: none;
+  clear: right;
 }
 
 .grid-item img {
@@ -263,13 +272,6 @@ a{
 .grid-item--mini {
   width: 40px;
   height: 40px;
-}
-
-.picture img{
-  float: right;
-  width: 500px;
-  height: auto;
-  border: 0.5px #D8D8D8 solid;
 }
 
 .select img{
@@ -311,8 +313,7 @@ a{
   }
 
   .menu li{
-  display: inline-block;
-  width: 80px;
+    display: inline-block;
   }
 
   div .picture{
@@ -362,7 +363,7 @@ a{
 
   .concept{
     width: 280px;
-    height: 400px;
+    height: auto;
   }
 
   h3{
@@ -395,12 +396,31 @@ a{
   .picture img{
     width: 200px;
     height: auto;
+    border: 0.3px #D8D8D8 solid;
+  }
+
+.profil img {
+  width: 180px;
+  height: auto;
+}
+
+.massege p{
+  font-size: 10px;
+  width: 230px;
+  height: auto;
+}
+
+  .modal-content {
+    color: #6E6E6E;
+    margin-right: 0px;
+    margin-left: 80px;
   }
 
 
   .select img{
     width:auto;
-     height:60px;
+     height:40px;
+     border: 0.3px #D8D8D8 solid;
   }
 
   h4{
@@ -412,7 +432,7 @@ a{
   }
 
   .menu{
-    width: 100%;
+    width: 70%;
     margin-bottom: 7px;
   }
 
@@ -435,8 +455,4 @@ a{
       width: 290px;
       height: 90px;
     }
-
-
-
-
 }
