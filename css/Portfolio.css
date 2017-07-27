@@ -31,8 +31,6 @@ h2{
   font-weight:lighter;
   letter-spacing: 1px;
   cursor: default;
-  width: 200px;
-  margin: 0px;
 }
 
 h3{
@@ -73,15 +71,21 @@ p{
   min-height: 100%;
 }
 
+.picture img{
+  float: right;
+  width: 500px;
+  height: auto;
+  border: 0.5px #D8D8D8 solid;
+}
+
 .menu{
   float: left;
   width: auto;
   height: auto;
+  clear: both;
   margin-top: 0px;
   margin-left: 40px;
-    clear: both;
 }
-
 
 
 .list {
@@ -113,6 +117,10 @@ a:hover img{
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+}
+
+#animatedModal_01 {
+  padding: 100px 0;
 }
 
 .area{
@@ -173,13 +181,13 @@ a{
   color : #6E6E6E;
 }
 
- .massege{
+.massege{
   float: none;
   width: auto;
   height: 350px;
   font-size: 13px;
-  margin-top: 0px;
   clear: inherit;
+  margin-top: 0px;
   margin-left: 30%;
   margin-right: 0px;
 }
@@ -266,13 +274,6 @@ a{
   height: 40px;
 }
 
-.picture img{
-  float: right;
-  width: 500px;
-  height: auto;
-  border: 0.5px #D8D8D8 solid;
-}
-
 .select img{
   width:auto;
   height:90px;
@@ -312,7 +313,7 @@ a{
   }
 
   .menu li{
-  display: inline-block;
+    display: inline-block;
   }
 
   div .picture{
@@ -454,8 +455,4 @@ a{
       width: 290px;
       height: 90px;
     }
-
-
-
-
 }
